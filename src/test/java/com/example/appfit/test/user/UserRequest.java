@@ -1,30 +1,10 @@
 package com.example.appfit.test.user;
-public class User {
 
-  private Integer id;
+public class UserRequest {
   private String name;
-
   private String email;
 
   private String password;
-
-  public Integer getId() {
-    return id;
-  }
-
-  public void setId(Integer id) {
-    this.id = id;
-  }
-
-  public Boolean getActive() {
-    return active;
-  }
-
-  public void setActive(Boolean active) {
-    this.active = active;
-  }
-
-  private Boolean active;
 
   public String getName() {
     return name;

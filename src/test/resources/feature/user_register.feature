@@ -1,11 +1,12 @@
 Feature: User registration
 
-  Scenario: User is not registered
+  Scenario: User is registered with success
     Given User is new and unknown
     When User is registered with valid data
-    Then User is registered and can login
+    And User is authenticated
+    Then User is known
 
     Scenario: User is not registered
-    Given User is new and unknown
-    When User is registered with invalid data
-    Then User is not registered and can't login
+    Given User with invalid password
+    When User register fail
+    Then Login fail
